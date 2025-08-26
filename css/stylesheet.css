@@ -97,6 +97,31 @@ h2 {
     width: 800px;
 }
 
+#services_content li {
+    padding: 8px;
+}
+
+#services_content table {
+    margin: 24px auto;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+}
+
+#services_content table th,
+#services_content table td {
+    border: 1px solid #064232;
+    padding: 16px;
+}
+
+#services_content table tr {
+    background-color: #568F87;
+}
+
+#services_content tr:nth-child(even) {
+    background-color: #6cb4ab;
+}
+
 .inputs {
     box-sizing: border-box;
     /* resize: vertical; */
