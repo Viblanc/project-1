@@ -32,6 +32,7 @@ nav>ul>li {
 
 nav ul li {
     position: relative;
+    transition: 0.3s;
 }
 
 nav li:hover {
@@ -94,6 +95,39 @@ h2 {
 
 #about_content img {
     width: 800px;
+}
+
+.inputs {
+    box-sizing: border-box;
+    /* resize: vertical; */
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin: 8px 0px;
+    border-radius: 8px;
+    border-color: #568F87;
+}
+
+input[type=submit] {
+    background-color: #568F87;
+    border: none;
+    border-radius: 5px;
+    color: #FFF5F2;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px;
+    margin: 16px 0px;
+    transition: 0.3s;
+}
+
+input[type=submit]:hover {
+    background-color: #3f6964;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+label {
+    font-weight: 500;
 }
 
 #copyright {
