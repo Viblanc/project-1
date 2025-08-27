@@ -89,6 +89,11 @@ h2 {
     text-align: left;
 }
 
+h3 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
 #about_content {
     text-align: center;
 }
@@ -122,9 +127,47 @@ h2 {
     background-color: #6cb4ab;
 }
 
+#wedding_array {
+    display: grid;
+    gap: 0.5em;
+    grid-template-areas:
+        "pic1 pic1"
+        "pic2 pic3";
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+
+#wedding_array>img:first-child {
+    grid-area: pic1;
+}
+
+#wedding_array>img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+#reception_array {
+    display: grid;
+    gap: 0.5em;
+    grid-template-areas:
+        "pic1 pic2"
+        "pic3 pic2";
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+
+#reception_array>img:first-child {
+    grid-area: pic2;
+}
+
+#reception_array>img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
 .inputs {
     box-sizing: border-box;
-    /* resize: vertical; */
+    resize: vertical;
     width: 100%;
     padding: 12px;
     font-size: 16px;
