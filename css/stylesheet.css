@@ -38,7 +38,6 @@ nav ul li {
 nav li:hover {
     background-color: #568F87;
     border-radius: 0px;
-    transition: 0.3s;
 }
 
 nav a {
@@ -50,7 +49,7 @@ nav a {
     position: absolute;
     left: 0;
     margin-top: 8px;
-    width: 248px;
+    width: 100%;
     display: none;
 }
 
@@ -75,7 +74,8 @@ li:hover>.submenu {
 #home_content img {
     margin: auto;
     display: block;
-    width: 800px;
+    max-width: 100%;
+    border-radius: 8px;
 }
 
 hr {
@@ -99,7 +99,49 @@ h3 {
 }
 
 #about_content img {
-    width: 800px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    margin: 0px auto;
+    background-color: #3f6964;
+    box-shadow: 0px 5px 20px #353535;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px #181818;
+}
+
+.card-img {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 25vh;
+    position: absolute;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+    padding: 16px;
+}
+
+.card-body h2 {
+    text-align: center;
 }
 
 #services_content li {
@@ -215,7 +257,6 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #3f6964;
-    transition: 0.3s;
     cursor: pointer;
 }
 
